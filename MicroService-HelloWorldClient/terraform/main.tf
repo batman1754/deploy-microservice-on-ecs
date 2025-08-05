@@ -8,7 +8,7 @@ module "ecs-fargate-service" {
   environment         = var.environment
   container_version   = var.container_version
   log_group_name      = "dev/client-service"
-  ecr_repository_name = "783019524052.dkr.ecr.us-east-2.amazonaws.com/tf-gactions-demo/client-svc"
+  ecr_repository_name = "783019524052.dkr.ecr.us-east-2.amazonaws.com/client-svc"
   port                = 80
   health_check_path   = "/"
   cloudmap_namespace  =  var.cloudmap_namespace
