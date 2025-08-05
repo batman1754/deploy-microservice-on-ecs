@@ -53,7 +53,7 @@ jobs:
         id: build-image
         env:
           ECR_REGISTRY: 783019524052.dkr.ecr.us-east-2.amazonaws.com
-          ECR_REPOSITORY: tf-gactions-demo
+          ECR_REPOSITORY: hello-svc
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .

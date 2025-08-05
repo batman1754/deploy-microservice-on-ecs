@@ -42,7 +42,7 @@ jobs:
       - name: Login to Public ECR
         uses: docker/login-action@v1
         with:
-         registry: public.ecr.aws
+         registry: 783019524052.dkr.ecr.us-east-2.amazonaws.com
 
       - name: Download Artifact
         uses: actions/download-artifact@v4
@@ -52,7 +52,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
-          ECR_REGISTRY: public.ecr.aws/w0f5g4k6
+          ECR_REGISTRY: 783019524052.dkr.ecr.us-east-2.amazonaws.com
           ECR_REPOSITORY: client-svc
           IMAGE_TAG: ${{ github.sha }}
         run: |
