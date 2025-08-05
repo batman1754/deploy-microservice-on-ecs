@@ -1,3 +1,3 @@
 region = "us-east-2"
-bucket = "devops4solutions-terraform"
+bucket = "dmy-shared-aws-infra"
 key    = "dev/clientsvc.tfstate"
